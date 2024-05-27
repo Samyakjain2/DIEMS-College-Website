@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>DIEMS Website</title>
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2? family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="web.html"><img src="Images/logo.jpg"></a>
+            <div class="nav-links" id="navLinks">
+               <i class="fa fa-times" onclick="hideMenu()"></i> 
+                <ul>
+                    <li><a href="web.html"><b>HOME</b></a></li>
+                    <li><a href="about.html"><b>ABOUT</b></a></li>
+                    <li><a href="course.html"><b>COURSE</b></a></li>
+                    <li><a href="blog.html"><b>BLOG</b></a></li>
+                    <li><a href="contact.html"><b>CONTACT</b></a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>OUR COURSES</h1>
+    </section>
+
+    <!------- Course ------->
+
+    <section class="course">
+        <h2>Courses We Offer</h2>
+        <p>Having a basic understanding of the subjects below fuel useful life skills, you'll be using for many years to come. It’s in your best interest to get a holistic understanding in these eleven areas. We offer these classes in this campus.</p>
+
+        <div class="row">
+            <div class="course-col">
+                <h3>Graduation</h3>
+                <p>Your graduation ceremony will become a key part of your own timeline; a symbol of change, progression and moving on to new adventures. Take this moment and make it one for the ages, for your personal highlights reel.</p>
+            </div>
+
+            <div class="course-col">
+                    <h3>Post-Graduation</h3>
+                    <p>A post-graduate is one which goes beyond the level of undergraduate thinking to demonstrate a higher level of independent thought. In other words, you should be able to show your reader that you have mastered the subject.</p>
+            </div>
+
+            <div class="course-col">
+                <h3>Doctorate (Ph.D)</h3>
+                <p>A doctorate dissertation should be much longer than a thesis and must include background and research information. A dissertation must include your research proposal, grant proposal, literature review, ideation of research topic, and every other minute detail about your research.</p>
+            </div>
+        </div>
+    </section>
+    <!----- Footer ------->
+
+    <section class="footer">
+        <h4>FOLLOW US ON</h4>
+
+        <div class="icons">
+            <a href="https://www.facebook.com/DIEMS.Auranagabad/" style="text-decoration: none" target="_blank">
+             <i class="fa fa-facebook"></i>
+            </a>
+            <a href="https://www.youtube.com/channel/UCyEGBvoMZ8pe3o4Nb8vc7Jw" style="text-decoration: none" target="_blank">
+             <i class="fa fa-youtube"></i>
+            </a>
+            <a href="https://www.instagram.com/official_diems/" style="text-decoration: none" target="_blank">
+             <i class="fa fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/deogiriengineering" style="text-decoration: none" target="_blank">
+             <i class="fa fa-linkedin"></i>
+            </a>
+         </div>
+
+    <!------- JavaScript for Toggle Menu ------->
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+    </section>
+</body>
+</html>

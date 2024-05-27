@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>DIEMS Website</title>
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2? family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="web.html"><img src="Images/logo.jpg"></a>
+            <div class="nav-links" id="navLinks">
+               <i class="fa fa-times" onclick="hideMenu()"></i> 
+                <ul>
+                    <li><a href="web.html"><b>HOME</b></a></li>
+                    <li><a href="about.html"><b>ABOUT</b></a></li>
+                    <li><a href="course.html"><b>COURSE</b></a></li>
+                    <li><a href="blog.html"><b>BLOG</b></a></li>
+                    <li><a href="contact.html"><b>CONTACT</b></a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>ABOUT US</h1>
+    </section>
+
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h2>History</h2>
+                <p>In pursuance with the policies of the Government of India to start engineering colleges in emerging technologies, <b>Deogiri Institute of Engineering and Management Studies</b> is established at Aurangabad during the academic year <b>2009-10.</b>
+
+                    Deogiri Institute of Engineering and Management Studies is affiliated to the Dr. Babasaheb Ambedkar Technological University, Lonere and is developed as per the norms of the All India Council of Technical Education (A.I.C.T.E.), Government of India.The Institute is consistently among the top institutes of Dr. B.A.M. University in examination results. The student-centric teaching learning environment, state of the art infrastructure, well-equipped laboratories, library stacked with good number of books, experienced and dedicated team of faculties are the key features of the Institute.The institute began with a motto of <b>“Duritanche Timir Jawo”</b> meaning let the darkness of ignorance be driven away.
+                    </p>              
+                    <a href="web.html" class="hero-btn red-btn">EXPLORE NOW</a><br><br><br><br>
+                <h2>Achievements</h2>
+                <p>Certification of  First Cycle Accreditation
+
+                    <br><br>AQAR 2017-18
+                    
+                    <br><br>AQAR 2018-19
+                    
+                    <br><br>AQAR 2019-20
+                    
+                    <br><br>AQAR 2020-21
+                    
+                    <br><br>Reassesment SSR
+                    
+                    </p>            </div>
+            <div class="about-col">
+                <img src="Images/meeting.jpg">
+                <img src="Images/naac.jpg">
+            </div>
+    </section>
+    
+    <!----- Footer ------->
+
+    <section class="footer">
+        <h4>FOLLOW US ON</h4>
+
+        <div class="icons">
+            <a href="https://www.facebook.com/DIEMS.Auranagabad/" style="text-decoration: none" target="_blank">
+             <i class="fa fa-facebook"></i>
+            </a>
+            <a href="https://www.youtube.com/channel/UCyEGBvoMZ8pe3o4Nb8vc7Jw" style="text-decoration: none" target="_blank">
+             <i class="fa fa-youtube"></i>
+            </a>
+            <a href="https://www.instagram.com/official_diems/" style="text-decoration: none" target="_blank">
+             <i class="fa fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/deogiriengineering" style="text-decoration: none" target="_blank">
+             <i class="fa fa-linkedin"></i>
+            </a>
+         </div>
+
+    <!------- JavaScript for Toggle Menu ------->
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+    </section>
+</body>
+</html>

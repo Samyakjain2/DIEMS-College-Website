@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>DIEMS Website</title>
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2? family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="web.html"><img src="Images/logo.jpg"></a>
+            <div class="nav-links" id="navLinks">
+               <i class="fa fa-times" onclick="hideMenu()"></i> 
+                <ul>
+                    <li><a href="web.html"><b>HOME</b></a></li>
+                    <li><a href="about.html"><b>ABOUT</b></a></li>
+                    <li><a href="course.html"><b>COURSE</b></a></li>
+                    <li><a href="blog.html"><b>BLOG</b></a></li>
+                    <li><a href="contact.html"><b>CONTACT</b></a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>CONTACT US</h1>
+    </section>
+<!------- Contact Us ------->
+
+    <section class="location">
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1876.2187718922098!2d75.31893094442748!3d19.86373800000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdb9860cbffffff%3A0xa66e2b579fb7570!2sDeogiri%20Institute%20of%20Engineering%20and%20Management%20Studies!5e0!3m2!1sen!2sin!4v1683286694346!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </section>
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-map-marker"></i>
+                    <span>
+                        <h5>Railway Station Road, Near VITS Hotel</h5>
+                        <p>Aurangabad-431005, Maharahtra, India.</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>0240-2367546</h5>
+                        <p>Monday-Saturday</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>admin@diems.org</h5>
+                        <p>Email us for any query</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form action="">
+                    <input text="text" placeholder="ENTER YOUR NAME" required>
+                    <input text="email" placeholder="ENTER YOUR EMAIL ADDRESS" required>
+                    <input text="text" placeholder="ENTER YOUR SUBJECT" required>
+                    <textarea rows="8" placeholder="MESSAGE" required></textarea>
+                    <button type="submit" class="hero-btn red-btn">SUBMIT</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <!----- Footer ------->
+
+    <section class="footer">
+        <h4>FOLLOW US ON</h4>
+
+        <div class="icons">
+            <a href="https://www.facebook.com/DIEMS.Auranagabad/" style="text-decoration: none" target="_blank">
+             <i class="fa fa-facebook"></i>
+            </a>
+            <a href="https://www.youtube.com/channel/UCyEGBvoMZ8pe3o4Nb8vc7Jw" style="text-decoration: none" target="_blank">
+             <i class="fa fa-youtube"></i>
+            </a>
+            <a href="https://www.instagram.com/official_diems/" style="text-decoration: none" target="_blank">
+             <i class="fa fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/deogiriengineering" style="text-decoration: none" target="_blank">
+             <i class="fa fa-linkedin"></i>
+            </a>
+         </div>
+
+    <!------- JavaScript for Toggle Menu ------->
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+    </section>
+</body>
+</html>
